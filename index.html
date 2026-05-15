@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Special Treat Bakery – Scone, Scotland</title>
+    <style>
+        :root {
+            --cream: #F3E9D7;
+            --red: #8A1F2A;
+            --brown: #4E2A1E;
+            --white: #ffffff;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            background: var(--cream);
+            color: var(--brown);
+            scroll-behavior: smooth;
+        }
+
+        /* Sticky Top Bar */
+        .topbar {
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+            background: var(--cream);
+            border-bottom: 2px solid var(--red);
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 10px 20px;
+        }
+
+        .topbar img {
+            height: 50px;
+            width: auto;
+        }
+
+        .nav-links a {
+            margin-left: 20px;
+            text-decoration: none;
+            color: var(--red);
+            font-weight: bold;
+        }
+
+        .nav-links a:hover {
+            text-decoration: underline;
+        }
+
+        header {
+            text-align: center;
+            padding: 40px 20px 20px;
+        }
+
+        h1 {
+            margin-bottom: 5px;
+            font-size: 2.2rem;
+            color: var(--red);
+        }
+
+        .subtitle {
+            font-size: 1rem;
+            color: var(--brown);
+        }
+
+        .gallery {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 20px;
+            padding: 20px;
+            max-width: 1100px;
+            margin: auto;
+        }
+
+        .item {
+            background: var(--white);
+            border-radius: 8px;
+            overflow: hidden;
+            box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+            text-align: center;
+        }
+
+        .item img {
+            width: 100%;
+            height: 300px;
+            /* ou 350px */
+            object-fit: cover;
+        }
+
+        .item h3 {
+            margin: 10px 0 5px;
+            color: var(--red);
+        }
+
+        .price {
+            color: var(--red);
+            font-weight: bold;
+            margin-bottom: 15px;
+        }
+
+        section {
+            max-width: 800px;
+            margin: 40px auto;
+            padding: 0 20px;
+            line-height: 1.6;
+        }
+
+        h2 {
+            color: var(--red);
+        }
+
+        footer {
+            text-align: center;
+            padding: 20px;
+            color: var(--brown);
+            font-size: 0.9rem;
+        }
+    </style>
+</head>
+
+<body>
+
+    <!-- ⭐ Sticky Top Bar -->
+    <div class="topbar">
+        <a href="#top">
+            <img src="images/logo.jpg" alt="Special Treat Bakery Logo">
+        </a>
+
+        <div class="nav-links">
+            <a href="#gallery">Gallery</a>
+            <a href="#story">About</a>
+            <a href="#hours">Hours</a>
+            <a href="#visit">Contacts</a>
+        </div>
+    </div>
+
+    <header id="top">
+        <h1>Special Treat Bakery</h1>
+        <div class="subtitle">Artisan Family Bakery • Scone, Scotland</div>    </header>
+
+    <section id="gallery" class="gallery">
+
+        <!-- Puddings -->
+        <div class="item">
+            <img src="images/stp.jpeg" alt="Traycake 1">
+            <h3>Sticky Toffee Pudding</h3>
+            <p style="font-size: 0.8rem;">Our Sticky Toffee Pudding is a warm homemade slice with rich toffee sauce, served with a mini cup of vanilla ice cream.Vegetarian / Gluten-Free.</p>
+            <p style="font-size: 0.8rem;">Allergens: Milk and Egg.</p>
+            <div class="price">£9.50</div>
+        </div>
+        <div class="item">
+            <img src="images/chocolate_mousse_cake.jpg" alt="Traycake 1">
+            <h3>Chocolate Mousse Cake</h3>
+            <p style="font-size: 0.8rem;">Our Chocolate Mousse Cake is a velvety homemade slice drizzled with dark chocolate, served with whipped cream and fresh strawberries.Vegetarian / Gluten-Free.</p>
+            <p style="font-size: 0.8rem;">Allergens: Milk and Egg.</p>
+            <div class="price">£9.50</div>
+        </div>
+
+    </section>
+
+    <section id="story">
+        <h2>Our Story</h2>
+        <p>
+            Special Treat Bakery is a family‑run artisan takeaway in Scone, Perth. Drop in for fresh sourdough loaves,
+            handcrafted pastries, indulgent traybakes, and beautifully made celebration cakes, along with a tempting
+            rotation of daily specials. Enjoy your treats with our full range of Nespresso coffees, espresso, americano,
+            flat white, cappuccino, and latte, or choose from our comforting selection of teas.
+    </section>
+
+    <section id="hours">
+        <h2>Opening Hours</h2>
+        <p>
+            <strong>Tuesday – Saturday:</strong> 10:00 AM – 1:00 PM<br>
+            <strong>Delivery from Tuesday to Sunday:</strong> 4:00 PM – 11:00 PM<br>
+        </p>
+    </section>
+
+    <section id="visit">
+        <h2>Visit Us</h2>
+        <p>
+            <strong>Address:</strong><br>
+            38 Perth Road<br>
+            Scone, PH2 6JL<br>
+        </p>
+        <p>
+            <strong>Facebook:</strong><br>
+            <a href="https://www.facebook.com/specialtreatbakeryscone" target="_blank">
+                facebook.com/specialtreatbakeryscone
+            </a>
+        </p>
+
+    </section>
+
+    <footer>
+        © 2026 Special Treat Bakery — Scone, Scotland
+    </footer>
+
+</body>
+
+</html>
